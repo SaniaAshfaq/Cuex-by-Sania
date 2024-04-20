@@ -1,0 +1,191 @@
+
+
+  /* css code for adding effects on cards on the file 03_services.jsx*/
+ /* styles.css */
+.card {
+  position: relative; /* Ensure positioning context for pseudo-element */
+}
+
+.card::before {
+  content: '';
+  width: 0; /* Initially cover no width */
+  height: 100%;
+  background-color: #00A79D;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  transition: width 0.5s ease; /* Transition width and opacity */
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.card:hover::before {
+  width: 100%; /* Expand the width on hover to cover the entire card */
+ 
+}
+
+.card:hover .svgStroke{
+  
+  fill: #00A79D;
+}
+.card:hover .svgDiv{
+  background-color: white;
+  
+}
+.card:hover .cardp{
+  color: white;
+ fill:white;
+}
+
+
+/* // This is the code for the component 04 About us to animte a circle box */
+
+
+.About {
+  position: relative;
+  overflow: hidden;
+}
+
+.About::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00A79D; /* Background color when hovered */
+  transform: translateY(100%); /* Initially move the overlay below the div */
+  transition: transform 0.5s ease; /* Smooth transition for the transform property */
+  
+}
+
+.About:hover::before {
+  transform: translateY(0); /* Move the overlay to cover the div on hover */
+}
+.About-svg{
+  fill:#00A79D;
+  z-index: 10;
+}
+.About:hover .About-svg{
+  fill: white;
+}
+
+
+/* 06 partners js animation code is here */
+.animateDiv{
+  animation: slider 7s linear infinite;
+  overflow: auto;
+}
+.parentDiv:hover .animateDiv{
+  animation-play-state: paused;
+}
+.animateDiv img{
+ 
+ padding: 0 30px;
+}
+
+ @keyframes slider {
+  from{
+    transform: translateX(0);
+
+  }
+  to{
+    transform: translateX(-100%);
+  }
+  
+} 
+
+
+/* code to animate cards of 08_Profile.jsx */
+
+.profileCard {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-bottom: 2px solid #00A79D;
+}
+
+.profileCard::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00A79D; /* Background color when hovered */
+  transform: translateY(100%); /* Initially move the overlay below the div */
+  transition: transform 0.5s ease; /* Smooth transition for the transform property */
+  z-index: -10;
+}
+
+.profileCard:hover::before {
+  transform: translateY(0); /* Move the overlay to cover the div on hover */
+}
+.profileCard:hover .profileHeading  
+{
+  color: white;
+  
+}
+
+.profileCard:hover .profilePara  
+{
+  color: white;
+  
+}
+
+/* css code for the animation of 09_Reviews.jsx */
+
+.card09 {
+  position: relative; /* Ensure positioning context for pseudo-element */
+  right: 0;
+ animation: slideRight 10s linear infinite;
+}
+
+
+
+.card09::before {
+  content: '';
+  width: 0; /* Initially cover no width */
+  height: 100%;
+  background-color: #00A79D;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  transition: width 0.5s ease; /* Transition width and opacity */
+  z-index: -1;
+  border-radius: 4%;
+}
+
+.card09:hover::before {
+  width: 100%; /* Expand the width on hover to cover the entire card */
+  border-radius: 4%;
+}
+.card09:hover .para09{
+  color: white;
+}
+
+
+
+@keyframes slideRight {
+  0%{
+    right: 0%;
+  }
+  50%{
+    right:50%;
+
+  }
+  100%{
+    right:100%;
+  }
+}
+
+
+
+/* Blog cards styles I gave class to blog card as same as card so dont be confuse letterin simple words i used the card class  for blog section also
+ */
+.blogsvg{
+  fill: #00A79D;
+}
+ 
