@@ -10,8 +10,21 @@ function Partners()
     return(
         <>
     
-         <div className="parentDiv bg-white w-full flex justify-center  py-20 my-12 overflow-hidden  whitespace-nowrap ">
+         <div className="parentDiv bg-white w-full  py-20 my-12 overflow-hidden  whitespace-nowrap m-auto relative  grid place-content-center">
+
          <div className="animateDiv bg-white w-full flex justify-center ">
+
+        <img src={partner1} alt="partnerimg" className="filter grayscale-[100%] hover:grayscale-0 inline-block " />
+        <img src={partner2} alt="partnerimg" className="filter grayscale-[100%] hover:grayscale-0 inline-block" />
+        <img src={partner3} alt="partnerimg" className="filter grayscale-[100%] hover:grayscale-0 inline-block" />
+        <img src={partner4} alt="partnerimg" className="filter grayscale-[100%] hover:grayscale-0 inline-block"/>
+        <img src={partner5} alt="partnerimg" className="filter grayscale-[100%] hover:grayscale-0 inline-block" />
+        <img src={partner6} alt="partnerimg" className="filter grayscale-[100%] hover:grayscale-0 inline-block"/>
+        <img src={partner1} alt="partnerimg" className="filter grayscale-[100%] hover:grayscale-0 inline-block " />
+
+
+
+              
         <img src={partner1} alt="partnerimg" className="filter grayscale-[100%] hover:grayscale-0 inline-block " />
         <img src={partner2} alt="partnerimg" className="filter grayscale-[100%] hover:grayscale-0 inline-block" />
         <img src={partner3} alt="partnerimg" className="filter grayscale-[100%] hover:grayscale-0 inline-block" />
@@ -20,11 +33,12 @@ function Partners()
         <img src={partner6} alt="partnerimg" className="filter grayscale-[100%] hover:grayscale-0 inline-block"/>
         <img src={partner1} alt="partnerimg" className="filter grayscale-[100%] hover:grayscale-0 inline-block " />
        
+
+
+
       
     </div>
-  
    
-
    
          </div>
         </>

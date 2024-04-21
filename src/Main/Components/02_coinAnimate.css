@@ -97,7 +97,7 @@
 /* 06 partners js animation code is here */
 .animateDiv{
   animation: slider 7s linear infinite;
-  overflow: auto;
+
 }
 .parentDiv:hover .animateDiv{
   animation-play-state: paused;
