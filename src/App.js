@@ -7,7 +7,13 @@ import {RouterProvider, createBrowserRouter} from 'react-router-dom';
 import Converter from './Main/Converter';
 import MainBlog from './Main/MainBlog';
 import ContactUs from './Main/ContactUs';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 function App() {
+  useEffect(()=>{
+      AOS.init();
+  },[]);
   let allroutes =  createBrowserRouter([
     {
       path:'/',

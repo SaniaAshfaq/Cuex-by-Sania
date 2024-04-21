@@ -55,8 +55,8 @@ let Card = (props)=>{
  return(
     <>
     
-     <div className='card w-1/5 sm:w-4/5 md:w-2/5 border-2 pl-4 py-4 rounded-lg bg-white z-30 border-l-[#00A79D] '>
-     <div className='svgDiv w-14 h-14 bg-[#00A79D] rounded-full flex items-center justify-center'>
+     <div className='card w-1/5 sm:w-4/5 md:w-2/5 border-2 pl-4 py-4 rounded-lg bg-white z-30 border-l-[#00A79D] '  >
+     <div className='svgDiv w-14 h-14 bg-[#00A79D] rounded-full flex items-center justify-center'  >
      <svg className='svgStroke' stroke="white" fill="white" stroke-width="0" viewBox={props.viewBox} height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d={props.path}></path></svg>
      </div>
        <h1 className='text-2xl my-3'  style={{ fontFamily: "Raleway, sans-serif", fontWeight: "800" }}>{props.heading}</h1>

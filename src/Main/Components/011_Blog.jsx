@@ -31,7 +31,7 @@ function Blog()
 let BlogCards = (props)=>{
     return(
         <>
-         <div className="card w-[27%] p-3 shadow-xl flex-col items-center rounded-xl sm:w-4/5 md:w-3/4">
+         <div className="card w-[27%] p-3 shadow-xl flex-col items-center rounded-xl sm:w-4/5 md:w-3/4" data-aos="flip-up">
             {/* image holder div */}
             <div className="w-full h-60 relative" style={{backgroundImage : `url(${props.blogimg})`, backgroundSize: "cover", backgroundPosition:"center"}}>
           <ul className="absolute bottom-2 right-2 ">

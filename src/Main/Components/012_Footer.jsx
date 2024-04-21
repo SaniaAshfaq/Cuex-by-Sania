@@ -17,9 +17,9 @@ function Footer() {
           {/* submain which hold all the flex data */}
           <div className="flex justify-around sm:flex-col md:flex-col">
             {/* first line div */}
-            <div className="w-1/4 sm:w-2/3 md:w-2/3">
+            <div className="w-1/4 sm:w-2/3 md:w-2/3" data-aos="fade-up">
               <img src={logo} alt="logoImage " className="mb-2" />
-              <p className="text-[#666666] text-[15px] my-6">
+              <p className="text-[#666666] text-[15px] my-6" data-aos="fade-up">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
                 magnam ipsa ducimus temporibus amet quasi nisi. A porro adipis.
               </p>
@@ -40,14 +40,14 @@ function Footer() {
               </div>
             </div>
             {/* second line div? */}
-            <div className="flex gap-20">
+            <div className="flex gap-20" >
               <BlogLinks topName="Company" first="About Us" second = "New and Blog" third = "Our Team" four = "converter" five="Exchange Rate"/>
               <BlogLinks topName="Resorces" first="Contact Us" second = "FAQ" third = "Download App" four="privacy policy" five = "Term and Conditions" />
             </div>
 
             <BlogLinks topName="Transfor Money" first="Register/login" second = "Currency Chart" third = "USA money transfor" four = "India Money Transfor" five = "UK Money Tranfor"/>
 
-            <div className="sm:w-1/2 md:w-1/2">
+            <div className="sm:w-1/2 md:w-1/2" data-aos="fade-up">
             <h1 className="text-xl pb-4 relative" style={{ fontFamily: "Raleway, sans-serif", fontWeight: "800"}}>
           Contact Us
     <span className="absolute bottom-0 left-0 w-1/4 h-0.5 bg-teal-600"></span>
@@ -81,7 +81,7 @@ function Footer() {
     
       </div>
 
-      <div className="flex items-center justify-center text-white bg-black py-2">
+      <div className="flex items-center justify-center text-white bg-black py-2" >
         <p className="text-white bg-black"> ©Cuex. Cloned by <span className="text-[#00A79D]">Sania Ashfaq</span></p>
       </div>
     </>
@@ -92,7 +92,7 @@ let BlogLinks = (props) => {
   return (
     <>
       <div className="">
-      <h1 className="text-xl pb-4 relative sm:w-1/2 md:w-1/2" style={{ fontFamily: "Raleway, sans-serif", fontWeight: "800"}}>
+      <h1 className="text-xl pb-4 relative sm:w-1/2 md:w-1/2" style={{ fontFamily: "Raleway, sans-serif", fontWeight: "800"}} data-aos="fade-up">
    {props.topName}
     <span className="absolute bottom-0 left-0 w-1/4  h-0.5 bg-teal-600"></span>
     <span className="absolute bottom-0 left-1/4 w-3/4  h-0.5 bg-gray-600"></span>
@@ -100,7 +100,7 @@ let BlogLinks = (props) => {
 
 
 
-        <ul className="text-[#666666] text-[15px] mt-4 sm:w-1/2 md:w-1/4">
+        <ul className="text-[#666666] text-[15px] mt-4 sm:w-1/2 md:w-1/4" data-aos="fade-up">
         <li className="py-2 relative group hover:text-[#00A79D] hover:cursor-pointer">
   {props.first}
     <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-transparent group-hover:w-full group-hover:bg-teal-600 transition-all duration-5000"></span>

@@ -4,12 +4,15 @@ import hero from "../Images/hero-img.png";
 import { useEffect , useState } from "react";
 import './02_coinAnimate.css';
 
+
+
 function Content() {
 
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
     setAnimate(true);
+
   }, []);
   return (
     <>
@@ -17,8 +20,9 @@ function Content() {
         {/* left side of the content */}
         <div className=" w-1/3 md:w-4/5 sm:w-4/5" style={{ fontFamily: "Roboto, sans-serif" }}>
           <div className={`coin-container z-0  ${animate ? 'animate' : ''}`}>
-            <img src={coin} alt="coin" />
+            <img src={coin} alt="coin" className="coin" />
           </div>
+
           <div>
             <p className="text-[#00A79D] my-2">FAST AND HASTEL FREE</p>
           </div>
@@ -113,7 +117,7 @@ function Content() {
               </div>
             </div>
             {/* image of the hero on the website */}
-            <div
+            <div  data-aos="fade-left"
               className="sm:hidden"
               style={{
                 backgroundImage: `url(${hero})`,

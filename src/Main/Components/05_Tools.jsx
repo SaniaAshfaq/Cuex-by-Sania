@@ -23,13 +23,13 @@ function Tools() {
         />
 
         <div className="grid w-5/12 grid-cols-2 grid-rows-2  gap-4 sm:w-4/5 md:w-4/5">
-          <div className="row-span-2 ">
+          <div className="row-span-2 " data-aos="fade-up">
             <img src={girl} alt="girl" className="rounded-xl mt-4 sm:mt-10" />
           </div>
-          <div className="">
+          <div className="" data-aos="fade-up">
             <img src={money1} alt="money1" className="rounded-xl mt-20" />
           </div>
-          <div className="">
+          <div className="" data-aos="fade-up">
             <img src={money2} alt="money2" className="rounded-xl " />
           </div>
         </div>

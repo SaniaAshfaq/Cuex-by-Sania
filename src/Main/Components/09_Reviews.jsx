@@ -31,7 +31,7 @@ let ReviewCards = (props)=>{
     return(
         <>
         
-        <div className="card09 w-[380px]  bg-white py-6 rounded-xl  shadow-md p-4 hover:cursor-grab z-10  inline-block ml-12 sm:w-[300px]" >
+        <div className="card09 w-[380px]  bg-white py-6 rounded-xl  shadow-md p-4 hover:cursor-grab z-10  inline-block ml-12 sm:w-[300px]"  >
                 {/* top section of the card */}
                   <div className="flex justify-between items-center mx-2  ">
                   <div className="flex my-3  items-center  " >

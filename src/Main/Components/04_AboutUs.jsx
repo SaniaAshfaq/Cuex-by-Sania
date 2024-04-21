@@ -17,16 +17,16 @@ export function About() {
       <div className="flex justify-center w-full bg-[#FAFAFC] py-20 sm:flex-col md:flex-col sm:items-center md:items-center sm:py-4">
         {/* left side div of pictures */}
         <div className="grid grid-cols-2 grid-row-2  w-5/12 sm:w-4/5 md:w-4/5 gap-2 ">
-          <div className="">
+          <div className="" data-aos="fade-up">
             <img src={Girl} alt="" className="rounded-xl" />
           </div>
-          <div className="">
+          <div className="" data-aos="fade-up">
             <img src={Money1} alt="" className=" rounded-xl mt-16" />
           </div>
-          <div className="">
+          <div className="" data-aos="fade-up">
             <img src={Money2} alt="" className="rounded-xl" />
           </div>
-          <div className="">
+          <div className="" data-aos="fade-up">
             <img src={Money3} alt="" className="rounded-xl" />
           </div>
         </div>
@@ -56,8 +56,8 @@ export function About() {
 
 export let Aboutcomp = (props) => {
   return (
-    <div className="flex items-center my-4">
-      <div className="About w-20 h-14 bg-[#00A79D4D] rounded-full flex justify-center items-center border-b-4 border-[#00A79D] mr-4  sm:w-24 sm:h-12">
+    <div className="flex items-center my-4" >
+      <div className="About w-20 h-14 bg-[#00A79D4D] rounded-full flex justify-center items-center border-b-4 border-[#00A79D] mr-4  sm:w-24 sm:h-12" data-aos="fade-up">
         <svg
           stroke="[#00A79D]"
           className="About-svg"
@@ -74,11 +74,13 @@ export let Aboutcomp = (props) => {
         <h1
           className="text-xl my-2"
           style={{ fontFamily: "Raleway, sans-serif", fontWeight: 700 }}
-        >
+          data-aos="fade-up">
           {props.heading}
         </h1>
-        <p className="text-[15px]" style={{ fontFamily: "Roboto, sans-serif", fontWeight: 300 }}>
+        <p className="text-[15px]" style={{ fontFamily: "Roboto, sans-serif", fontWeight: 300 }}
+        data-aos="fade-up">
           {props.para}
+          
         </p>
       </div>
     </div>
@@ -91,19 +93,20 @@ export let AboutLeftCom = (props) => {
       <p
         className="text-[#00A79D] text-[15px]"
         style={{ fontFamily: "Roboto, sans-serif", fontWeight: 500 }}
-      >
+        data-aos="fade-up"  >
         {props.top}
+        
       </p>
       <h1
         className="text-4xl my-6 sm:text-3xl"
         style={{ fontFamily: "Raleway, sans-serif", fontWeight: 700 }}
-      >
+        data-aos="fade-up"  >
         {props.heading}
       </h1>
       <p
         className=""
         style={{ fontFamily: "Roboto, sans-serif", fontWeight: 300 }}
-      >
+        data-aos="fade-up">
         {props.para}
       </p>
       <div>

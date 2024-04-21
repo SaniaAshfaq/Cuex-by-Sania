@@ -1,3 +1,25 @@
+/* for moving coin */
+.coin-container {
+  position: relative; /* Required for absolute positioning of the coin */
+
+}
+
+.coin {
+ 
+  position: relative;
+ 
+  animation: moveRight 5s linear infinite alternate; /* Adjust animation duration and timing function as needed */
+}
+
+@keyframes moveRight {
+  from {
+    left: 0px; /* Start position */
+  }
+  to {
+    left: 100px; /* End position */
+  }
+}
+
 
 
   /* css code for adding effects on cards on the file 03_services.jsx*/

@@ -37,7 +37,7 @@ function Features()
 let FeatureCards = (props)=>{
     return(
         <>
-          <div className=" w-[27%]  px-4 py-8 border bg-white rounded-lg shadow-lg sm:w-4/5" >
+          <div className=" w-[27%]  px-4 py-8 border bg-white rounded-lg shadow-lg sm:w-4/5" data-aos="flip-right" >
                     {/* this div is for logo and the circle behind it */}
                   <div className="relative pl-2 ">
                     <svg stroke="currentColor"  style={{fill:"#00A79D"}} stroke-width="0" viewBox={props.viewBox} height="3.2em" width="3.2em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d={props.path}></path></svg>

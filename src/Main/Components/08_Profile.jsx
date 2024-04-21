@@ -51,8 +51,8 @@ function Profile()
 let ProfileCards = (props)=>{
     return(
         <>
-         <div className=" profileCard flex  border bg-white px-4 py-6">
-                   <div className="mr-4">
+         <div className=" profileCard flex  border bg-white px-4 py-6" data-aos="fade-up">
+                   <div className="mr-4" >
                      <img src={props.img} alt="usa" className="w-[80px] h-[50px] " />
                     </div>
                     <div className="">
